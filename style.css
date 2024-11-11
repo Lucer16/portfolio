@@ -1,0 +1,198 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00796b;
+    padding: 1rem;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 1rem;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.navbar-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li {
+        margin: 0.5rem 0;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #00796b;
+    color: white;
+    padding: 1.5rem 0;
+}
+
+/* Banner Slider */
+.banner-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-height: 400px;
+}
+
+.banner-slider .slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-slider .slide.active {
+    display: block;
+}
+
+.banner-slider .slide img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .banner-slider {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-slider {
+        max-height: 150px;
+    }
+}
+
+/* Servicios */
+.services {
+    padding: 2rem 1rem;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.services h2 {
+    margin-bottom: 1rem;
+    color: #00796b;
+    justify-content: center;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    flex: 1 1 calc(33.33% - 1rem);
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.service-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service-card h3 {
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+.service-card p {
+    color: #666;
+}
+
+/* Servicios en columnas */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Formulario de contacto */
+.contact {
+    padding: 2rem 1rem;
+    background: #f1f1f1;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #00796b;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004d40;
+}
