@@ -1,0 +1,296 @@
+/* Estilos generales */
+body {
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+section {
+    margin-bottom: 0px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/* Estilo para las líneas horizontales */
+.linea-separadora {
+    border: none;
+    border-top: 1px solid #B9B7B7;
+    margin: 20px 0;
+}
+
+.linea-resaltada {
+    border: none;
+    border-top: 3px solid #B9B7B7;
+    margin: 20px 0;
+}
+
+/* Resto de tus estilos */
+/* Contenedor principal */
+.contenedor1 {
+    background-color: #004C97;
+    text-align: center;
+    position: relative;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.barra-superior {
+    height: 0px;
+    background: #004C97;
+    top: 0px;
+}
+
+.barra-inferior {
+    height: 18px;
+    background: #004C97;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    position: left;
+    margin-bottom: 10px;
+}
+
+/* Información de pago */
+.informacion-pago {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.informacion-pago .subtitulo {
+    font-size: 12px;
+    font-weight: 800;
+    color: #0B336B;
+    margin-bottom: 5px;
+}
+
+.informacion-pago .titulo {
+    font-size: 14px;
+    font-weight: 800;
+    color: #0B336B;
+    margin-bottom: 10px;
+}
+
+.informacion-pago .detalles {
+    font-size: 12px;
+}
+
+.informacion-pago .etiqueta {
+    font-weight: 800;
+}
+
+.informacion-pago .valor {
+    font-weight: 400;
+}
+
+/* Sección de saldo */
+.seccion-saldo {
+    text-align: center;
+    position: relative;
+}
+
+.seccion-saldo .monto {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.seccion-saldo .etiqueta-saldo {
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.seccion-saldo .vencimiento {
+    font-size: 12px;
+    font-weight: 800;
+    color: #0B336B;
+    margin-bottom: 10px;
+}
+
+/* Separador */
+.seccion-saldo .separador {
+    width: 100%;
+    height: 1px;
+    background-color: #B9B7B7;
+    margin: 10px 0;
+}
+
+/* Opciones de pago */
+.opciones-pago {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opciones-pago .separador2 {
+    width: 100%;
+    height: 1px;
+    background-color: #B9B7B7;
+    margin: 5px 0;
+}
+
+.texto-tarjetas {
+    color: #676767;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.tarjetas-aceptadas {
+    width: 100%;
+    max-width: 383px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.boton-pagar {
+    width: 100%;
+    max-width: 340px;
+    padding: 10px;
+    background: #004C97;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-pagar:hover {
+    background: #003366;
+}
+
+/* Detalles del producto */
+.detalles-producto {
+    font-size: 12px;
+}
+
+.detalles-producto .producto-nombre {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.detalles-producto .producto-id .etiqueta {
+    font-weight: 800;
+}
+
+.detalles-producto .producto-id .valor {
+    font-weight: 400;
+}
+
+.detalles-producto .producto-cantidad,
+.detalles-producto .producto-total {
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.detalles-producto .producto-cantidad {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.detalles-producto .producto-total {
+    flex: 1;
+    text-align: right;
+}
+
+.detalles-producto .producto-detalles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Subtotal */
+.subtotal .linea-resaltada {
+    border: none;
+    border-top: 3px solid #B9B7B7;
+    margin: 20px 0;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.subtotal .texto-subtotal {
+    font-size: 13px;
+    font-weight: 800;
+    text-align: left;
+    flex: 1 1 45%;
+}
+
+.subtotal .monto-subtotal {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+    flex: 1 1 45%;
+}
+
+/* Separador */
+.separador3 {
+    width: 100%;
+    height: 1px;
+    background-color: #B9B7B7;
+    margin: 10px 0;
+}
+
+/* Total */
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+}
+
+.total .texto-total {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: left;
+    flex: 1;
+}
+
+.total .monto-total {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: right;
+    flex: 1;
+}
+
+/* Pie de página */
+.pie-pagina {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .texto-pie {
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.pie-pagina .logo-pie {
+    width: 109px;
+    height: auto;
+    margin-left: 10px;
+}
+
+/* Consulta de medios para dispositivos móviles */
+@media (max-width: 600px) {
+    section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .logo {
+        margin-left: 20px; /* Igual al margen de las secciones en móvil */
+    }
+}
+}
